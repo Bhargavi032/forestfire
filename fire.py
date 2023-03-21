@@ -43,7 +43,7 @@ if(st.button('predict')):
         dec_clf_pred=dec_clf.predict(values)
         dec_reg_pred=dec_reg.predict(values)
         
-        if(dec_clf_pred==0):
+        if(dec_clf_pred==1):
             st.error("There is no fire")
         else:
             st.success("There is fire")
