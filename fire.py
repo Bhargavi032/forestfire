@@ -61,9 +61,9 @@ if(st.button('predict')):
         dec_reg_pred=dec_reg.predict(values)
         
         if(dec_clf_pred==1):
-            st.error("There is no fire")
-        else:
             st.success("There is fire")
+        else:
+            st.error("There is no fire")
         st.subheader("Area")
         if(dec_reg_pred[0]==0):
             st.error(dec_reg_pred[0])
