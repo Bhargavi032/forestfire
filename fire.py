@@ -64,11 +64,7 @@ if(st.button('predict')):
             st.success("There is fire")
         else:
             st.error("There is no fire")
-        '''st.subheader("Area")
-        if(dec_reg_pred[0]==0):
-            st.error(dec_reg_pred[0])
-        else:
-            st.success(dec_reg_pred[0])'''
+   
  #---------------------------------------------------------------------------------           
     if(model=='Random Forest'):
         st.subheader("Random Forest")
